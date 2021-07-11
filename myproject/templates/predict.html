@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+      <form action="/predict" method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=predict>
+      </form>
+      {{ shape }}
+
+{% endblock %}
